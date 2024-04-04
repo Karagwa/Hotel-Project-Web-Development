@@ -2,7 +2,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
+    gap: 50px;
+    align-items: center;
+    padding: 60px;
+    
+}
 
 .room{
     display: flex;
@@ -11,15 +15,165 @@
     align-items: center;
     margin: 10px;
     padding: 10px;
-    border: 1px solid black;
+    border: none;
     border-radius: 10px;
-    background-color: #f0f0f0;
+    
+    
+    
 }
-.room img {
-    width: 100%;
-    height: auto;
+.image {
+   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+   height: 100%;
+   border-radius:5px;
+   width: 500px;
+    
 }
 
-.room p {
+.room_details{
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    margin-inline: 0rem;
+    padding: 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transform: translateY(-3%);
+    width: 450px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}   
+
+h1{
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Playfair Display;
+    font-weight: 900;
+    font-size: 90px;
+}
+
+body {
+    background-image: url('General-Maafushivaru-Maldives-13.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+.room_details h4{
+    text-align: left;
+    line-height: .25; /* Adjust this value to change the spacing */
+}
+
+h3{
+    font-family: Playfair Display;
+    font-size: 40px;
+    font-weight: 900;
+    color: #333;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#words{
+    font-family: Lora;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+#memories{
+    font-family:Playfair Display ;
+    font-size: 50px;
+    text-align: center;
+}
+
+h3+p{
+    font-family: Playfair Display;
+    font-size: 20px;
+    
+    color: #333;
+    text-align:left;
+}
+
+h4{
+    font-family: Lora;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+header, footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+
+.book{
+background-color: #50b3a2; /* Match the header color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 30px;
+  margin-top: 10px;
+    font-family: Playfair Display;
+}
+
+button:hover {
+    background-color: #3c8d80; /* A darker shade for hover effect */
+  }
+
+footer{
+    background-color: #f0f0f0;
+    padding: 10px;
+    width:100vw;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        padding: 20px;
+    }
+    .room_details{
+    
+    }
+    .image{
+        width: 500px;
+    }
+    .room{
+        margin: 10px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    #words{
+        font-size: 30px;
+    }
+    #memories{
+        font-size: 60px;
+    }
+    .book{
+        font-size: 20px;
+    }
 }
