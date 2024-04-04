@@ -2,63 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Room Listings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&family=Lora&family=Open+Sans&family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Listings.css" type="text/css">
 </head>
 <body>
+    
     <header>
-        <h1>Room Listings</h1>
-    </header>
+        <h3>
+            Paradise Lagoon
+        </h3>
+        </header>
+    
     <main>
+        <h1>Hand Picked Rooms</h1>
         <section class="container">
-            <article class="room">
+            <div class="room">
+                
                 <a href="presidential.html">
-                    <figure>
-                        <img src="https://th.bing.com/th/id/OIP.7Noih8NxXuqe28tJ5hjBvAHaE0?w=278&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                    <img class="image"src="https://th.bing.com/th/id/OIP.7Noih8NxXuqe28tJ5hjBvAHaE0?w=278&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
                         alt="Image of Presidential Pent House">
-                        <figcaption>Presidential Pent House</figcaption>
-                    </figure>
                 </a>
-                <p>Price: $1000</p>
-                <p>Capacity: 2</p>
-                <p>Bed: 1</p>
-                <p>Bathroom: 1</p>
-                <p>View: Ocean</p>
-            </article>
-            <article class="room">
-                <a href="family.html">
-                    <figure>
-                        <img src="https://www.bing.com/th?id=OIP.MQVfdH0BJ8MBM2W6FbjDZwHaEK&w=171&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" 
-                        alt="Image of Family Room">
-                        <figcaption>Family Room</figcaption>
-                    </figure>
+                <div class="room_details">    
+                    <div>
+                        <h3>Deluxe Suite</h3>
+                        <p>Well appointed rooms for guest who desire more</p>
+                    </div>
+                <div class="details">
+                    <h4>Price: $399<span> per night</span></h4>
+                    <h4>Capacity: 4 | Bed: 3 | Bathroom: 3 | View: Ocean</h4>
+                </div>
+                <button class="book" onclick="location.href='booking.html?room=family'">Book Now</button>
+                </div>
+            </div>
+
+            <div class="room">
+                <a href="presidential.html">
+                    <img class="image" src="https://th.bing.com/th/id/OIP.7Noih8NxXuqe28tJ5hjBvAHaE0?w=278&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                        alt="Image of Presidential Pent House">
                 </a>
-                <p>Price: $800</p>
-                <p>Capacity: 5</p>
-                <p>Bed: 2</p>
-                <p>Bathroom: 1</p>
-                <p>View: Garden</p>
-            </article>
-            <article class="room">
-                <a href="deluxe.html">
-                    <figure>
-                        <img src="https://www.bing.com/th?id=OIP._sBzQT9vYXNzNYTcrld_RAHaFb&w=142&h=104&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" 
-                        alt="Image of Deluxe Room">
-                        <figcaption>Deluxe Room</figcaption>
-                    </figure>
+                <div class="room_details">    
+                    <div>
+                        <h3>Family Room</h3>
+                        <p>Multiple rooms for your family and a living area</p>
+                    </div>
+                <div class="details">
+                    <h4>Price: $399<span> per night</span></h4>
+                    <h4>Capacity: 4 | Bed: 3 | Bathroom: 3 | View: Ocean</h4>
+                </div>
+                <button class="book" onclick="location.href='booking.html?room=family'">Book Now</button>
+                </div>
+            </div> 
+                            
+            <div class="room">
+                <a href="presidential.html">
+                    <img class="image" src="https://th.bing.com/th/id/OIP.EHkOkOQcMloWfrd2qDWn9wHaE8?w=311&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                        alt="Image of Presidential Pent House">
                 </a>
-                <p>Price: $500</p>
-                <p>Capacity: 1</p>
-                <p>Bed: 1</p>
-                <p>Bathroom: 1</p>
-                <p>View: Pool</p>
-            </article>
+                <div class="room_details">    
+                                
+                    <div>
+                        <h3>Luxury Pent House</h3>
+                        <p>Top tier services for guest who desire more</p>
+                    </div>
+                
+                <div class="details">
+                    <h4>Price: $1000<span> per night</span></h4>
+                    <h4>Capacity: 4 | Bed: 3 | Bathroom: 3 | View: Ocean</h4>
+                </div>
+                <button class="book" onclick="location.href='booking.html?room=family'">Book Now</button>
+                    </div>
+                    
+            </div>
+
+
+                    <div class="words">
+                        <h2 id="memories">Create Memories</h2>
+                        <p id="words">We would love to see you (very) soon</p>
+                        
+                    </div>
         </section>
-        <section>
-            <h3>Create Memories</h3>
-            <p>Book a room today and create memories that will last a lifetime.</p>
-        </section>
+        
     </main>
+    <footer>
+        <p>&copy; 2021 Paradise Lagoon</p>
+    </footer>
+    <script text="text/javascript" src="Listings.js"></script>
+    </body>
 </body>
 </html>
