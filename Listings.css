@@ -29,6 +29,11 @@
     
 }
 
+.img-link:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
 .room_details{
     display: flex;
     flex-direction: column;
@@ -58,6 +63,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     color: white;
+    overflow: hidden;
 }
 
 a{
@@ -117,6 +123,7 @@ header, footer {
     width: 100%;
     height: auto;
     box-sizing: border-box;
+    border-radius: 5px;
 }
 
 
@@ -141,7 +148,66 @@ footer{
     padding: 10px;
     width:100vw;
     height: 100%;
+    border-radius: 5px;
 }
+
+.bg-dark {
+    background-color: #50b3a2;
+    color: white;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.diff-rooms {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav__logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+    font-family: Playfair Display;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .link a {
+    font-weight: 500;
+    color: black;
+    transition: 0.3s;
+    padding-right: 15px;
+  }
+  
+  .link a:hover {
+    color: #3c8d80;
+  }
+
+  li{
+    float:right
+}
+
 
 @media screen and (max-width: 768px) {
     .container {
@@ -176,4 +242,19 @@ footer{
     .book{
         font-size: 20px;
     }
+   .link a {
+        font-weight: 500;
+        font-size: 15px;
+        padding-right: 5px;
+    
 }
+  
+}   
+
+   
+
+
+/*@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 60%;
+    }
