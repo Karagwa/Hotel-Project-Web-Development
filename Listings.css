@@ -63,7 +63,12 @@ body {
     background-attachment: fixed;
     background-size: cover;
     color: white;
+    overflow: auto;
     
+}
+
+body::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari and Opera */
 }
 
 a{
@@ -183,9 +188,10 @@ nav {
     color: black;
     font-family: Playfair Display;
   }
+
   #img{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     position: relative;
   }
   
@@ -293,6 +299,12 @@ html{
         padding-right: 1px;
     
 }
+
+#img{
+    width: 130px;
+    height: 130px;
+    position: relative;
+  }
   
 }   
 
