@@ -3,29 +3,38 @@ ScrollReveal().reveal('.room',
 
 
 
-// Add a hover effect to each room
-document.querySelectorAll('.room').forEach(room => {
-    room.addEventListener('mouseover', () => {
-        room.style.transform = 'scale(1.1)';
-    });
-    room.addEventListener('mouseout', () => {
-        room.style.transform = 'scale(1.0)';
-    });
-});
+
 
 const text = 'Create memories';
-let index = 0;
+const text1='Hand Picked Rooms';
 
-function writeText() {
-    document.getElementById('create-memories').innerText = text.slice(0, index);
 
-    index++;
+function writeText(text, elementId) {
+    let index = 0;
 
-    // If we've gotten to the end of the text, stop the interval
-    if (index > text.length) {
-        clearInterval(intervalId);
+    function write() {
+        document.getElementById(elementId).innerText = text.slice(0, index);
+        index++;
+
+        // If we've gotten to the end of the text, stop the interval
+        if (index > text.length) {
+            clearInterval(intervalId);
+        }
     }
+
+    // Create the observer
+    const observer = new IntersectionObserver((entries) => {
+        // If the element is in the viewport, start the interval
+        if (entries[0].isIntersecting) {
+            intervalId = setInterval(write, 100);
+            observer.disconnect(); // Stop observing once the text starts typing
+        }
+    });
+
+    // Start observing
+    observer.observe(document.getElementById(elementId));
 }
 
-// Start the interval
-const intervalId = setInterval(writeText, 100); // Adjust the second parameter to make the typing faster or slower
+let intervalId;
+writeText(text, 'create-memories');
+writeText(text1, 'hand-picked-rooms'); // Replace 'hand-picked-rooms' with the actual ID of the element containing the "Hand Picked Rooms" text
