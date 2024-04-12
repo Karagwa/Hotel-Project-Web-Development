@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 50px;
+    gap: 20px;
     align-items: center;
     padding: 60px;
     
@@ -55,15 +55,13 @@ h1{
     font-family: Playfair Display;
     font-weight: 900;
     font-size: 90px;
+    color: #333;
 }
 
 body {
-    background-image: url('Blue Minimalist Holiday Promo Poster2.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    color: white;
     overflow: auto;
+    background: linear-gradient(100deg, #fadbd8, #85c1e9);
+    animation: gradient-animation 5s ease-in-out infinite;
     
 }
 
@@ -84,35 +82,28 @@ a{
 h3{
     font-family: Playfair Display;
     font-size: 40px;
-    font-weight: 900;
+    font-weight: 200px;
     color: #333;
 }
 
-.footer{
-    padding: 30px;
-    font-family: Playfair Display;
-    font-size: 20px;
-    color:#333;
 
-}
 
-#contact-info{
-    border-radius: 5px;
-}
 
 
 #words{
     font-family: Lora;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
-    color: white;
+    color:#f0f0f0;
     text-align: center;
+    box-shadow: #333;
 }
 
 #memories{
     font-family:Playfair Display ;
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
+    color: #333;
 }
 
 h3+p{
@@ -134,34 +125,31 @@ header{
     background-color: #fff;
     padding: 10px;
     margin: 0;
-    width: 100%;
-    height: auto;
+    
     box-sizing: border-box;
     border-radius: 5px;
 }
 
 
 .book{
-background-color:#d4af37; /* Match the header color */
+background-color:#779ecb; /* Match the header color */
   color: white;
-  padding: 10px 20px;
+  padding: 10px 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 35px;
   margin-top: 10px;
-    font-family: Playfair Display;
+  
+  font-family: Playfair Display;
 }
 
 button:hover {
-    background-color:#846d21; /* A darker shade for hover effect */
+    background-color:#5486c0; /* A darker shade for hover effect */
   }
 
 
-.bg-dark {
-    background-color:#d4af37;
-    
-}
+
 
 .diff-rooms {
     display: none;
@@ -180,18 +168,13 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
+    height: 50px;
   }
   
-  .nav__logo {
-    font-size: 3rem;
-    font-weight: 600;
-    color: black;
-    font-family: Playfair Display;
-  }
-
+ 
   #img{
-    width: 250px;
-    height: 250px;
+    width: 125px;
+    height: 125px;
     position: relative;
   }
   
@@ -202,10 +185,12 @@ nav {
     gap: 2rem;
     
   }
+
+  
   
   .link a{
     font-weight: 500;
-    color: black;
+    color: #333;
     transition: 0.3s;
     font-size: 2rem;
     padding-right: 15px;
@@ -213,11 +198,12 @@ nav {
   }
   
 .link a:hover {
-    color:#d4af37;
+    color:lightblue;
   }
 
 li{
     float:left;
+    
 }
 
 .dropdown li{
@@ -225,10 +211,11 @@ li{
     display: block;
     text-align: left;
     padding-left:0px;
+    width: 100%;
 }
 
 .dropdown li:hover{
-    color:#d4af37;
+    color: lightblue;
 }
 
 
@@ -248,8 +235,8 @@ li{
 .dropdown a {
     color: black;
     padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+    text-decoration:none;
+    display:block;
 }
 
 /* Show the dropdown menu on hover */
@@ -260,7 +247,15 @@ li{
 html{
     scroll-behavior: smooth;
 }
-
+footer p{
+    text-align: center;
+    font-size: 20px;
+    font-family: Lora;
+    color:#fff;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
 
 @media screen and (max-width: 768px) {
     .container {
@@ -276,7 +271,7 @@ html{
         margin: 10px;
     }
     h1{
-        font-size: 60px;
+        font-size: 50px;
     }
     h3{
         font-size: 30px;
