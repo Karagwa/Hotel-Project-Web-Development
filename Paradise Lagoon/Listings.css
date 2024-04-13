@@ -257,6 +257,7 @@ footer p{
     border-radius: 5px;
 }
 
+/*Responsiveness when you adjust the screen size*/
 @media screen and (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;

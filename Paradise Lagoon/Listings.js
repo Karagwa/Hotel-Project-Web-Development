@@ -1,3 +1,4 @@
+//Reveal room elements on scroll
 ScrollReveal().reveal('.room', 
 { delay: 500, duration: 1000, origin: 'top', distance: '70px' });
 
@@ -37,4 +38,4 @@ function writeText(text, elementId) {
 
 let intervalId;
 writeText(text, 'create-memories');
-writeText(text1, 'hand-picked-rooms'); // Replace 'hand-picked-rooms' with the actual ID of the element containing the "Hand Picked Rooms" text
+writeText(text1, 'hand-picked-rooms'); 

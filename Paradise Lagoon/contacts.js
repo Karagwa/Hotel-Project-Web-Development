@@ -1,3 +1,5 @@
+//function to display message when you submit the form
+
 function submitForm() {
         var name = document.getElementById("name").value;
         var email = document.getElementById("email").value;
