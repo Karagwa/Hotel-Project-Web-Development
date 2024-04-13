@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELUXE SUITE</title>    
+    <link rel="stylesheet" href="deluxe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <div class="nav__logo"><img id="img" src="deluxe/logo.jpg" alt=" Paradise Lagoon "></div>
+            <ul class="nav__links">
+                <li class="link"><a href="homePage.html">Home</a></li>
+                <li class="link"><a href="homePage.html/#About-us">About us</a></li>
+                <li class="link"><a href="Listings.html">Room Listings</a></li>
+                <li class="link"><a href="contact.html">Contact us</a></li>
+            </ul>  
+        </nav>
+    </header>
+
+    <div class="slider">
+        <div class="list">
+            <div class="items">
+                <img src="deluxe/bedroom.jpg">
+            </div>
+            <div class="items">
+                <img src="deluxe/living room.jpg">
+            </div>
+            <div class="items">
+                <img src="deluxe/bathroom.jpg">
+            </div>
+            <div class="items">
+                <img src="deluxe/closet.jpg">
+            </div>  
+            <div class="items">
+                <img src="deluxe/bedroom.jpg">
+            </div>         
+
+        </div>
+    </div>
+
+    <section class="about top" id="about">
+        <div class="container_flex">
+            <div class="left">
+                <div class="img">
+                    <img src="deluxe/glass.jpeg" alt="" class="image1">
+                    <img src="deluxe/shells.jpeg" alt="" class="image2">
+                </div>
+            </div>
+            <div class="right2">
+                <div class="heading">
+                    <h5>RAISING COMFORT TO THE HIGHEST LEVEL</h5>
+                    <h2><u>DELUXE SUITE</u></h2>
+                      <p class="description">This suite comes as the icing to an unforgettable solo beach vacation.</p>
+                      <p class="description">Enjoy peaceful nights,incredible sea views and full access to the beach.</p>
+                      <p class="description">Put all your worries at bay with this wonderful suite. Comfort redefined!</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="wrapper top">
+        <div class="container">
+            <div class="text">
+                <h4><u>Added Ammenities</u></h4>        
+                <div class="content">
+                  <div class="box flex">
+                    <i class="fas fa-dumbbell"></i>
+                    <span>Gym & Yoga</span>
+                  </div>
+                  <div class="box flex">
+                    <i class="fas fa-spa"></i>
+                    <span>Spa & massage</span>
+                  </div>                  
+                  <div class="box flex">
+                    <i class="fa-solid fa-utensils"></i>
+                    <span>Restaurant</span>
+                  </div>
+                  <div class="box flex">
+                    <i class="fa-solid fa-umbrella-beach"></i>
+                    <span>Private Beach</span>
+                  </div>
+                </div>
+
+           </div>
+
+        </div>
+
+    </section>
+    
+
+
+    <div id="wrapper">
+        <div id="right">
+            <h1>Paradise Lagoon</h1>
+            <form id="form">
+                <div>
+                    <span>Full Name:</span>
+                    <input type="text" id="full name" required>
+                </div>
+                <div>
+                    <span>E-mail:</span>
+                    <input type="mail" id="email"required>
+                </div>
+                <div>
+                    <span>Check In:</span>
+                    <input type="date" id="check-in" required>
+                </div>
+                <div>
+                    <span>Check Out:</span>
+                    <input type="date" id="chech-out" required>
+                </div>
+                <button type="button" class="btn" onclick="openPopup()">Book Now</button>               
+                </div>
+            </form>
+            <div class="popup" id="popup">
+                <img src="deluxe/check mark.png">
+                <h2>Thank you!</h2>
+                <p>You have booked your spot successfully. We can't wait to receive you!</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+        </div>
+
+    </div>
+    <footer id="main-footer">
+        <p>Paradise Lagoon &copy; 2019, All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function openPopup(){
+            let popup = document.getElementById("popup");
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            let popup = document.getElementById("popup");
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+</html>

@@ -87,42 +87,91 @@ p{
     color: #333;
     background: #f7c08a;
 }
-#navbar{
-    background-color: #333;
-    color: #fff;
-    overflow: auto;
-}
 
-#navbar a{
-    color: #fff;
-} 
 
-#navbar h1{
-    float: left;
-    padding-top: 20px;
+nav {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7c08a;
+    height: 60px;
+  }
+  
+ 
+  #img{
+    width: 100px;
+    height: 80px;
+    position: relative;
+    margin-top: 10%;
 
-}
-
-#navbar ul{
+  }
+  
+  .nav__links {
     list-style: none;
-    float: right;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    
+  }
+
+  
+  
+  .link a{
+    font-weight: 500px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    font-size: 20px;
+    padding-right: 15px;
+    font-family: Playfair Display;
+  }
+  
+.link a:hover {
+    color: #935116 ;
+  }
+
+li{
+    float:left;
 }
 
-#navbar ul li{
-    float: left;
-}
-
-#navbar ul li a{
+.dropdown li{
+    float: center;
     display: block;
-    padding: 20px;
-    text-align: center;
+    text-align: left;
+    padding-left:0px;
+    width: 100%;
 }
 
-#navbar ul li a:hover,
-#navbar ul li a.current{
-    background: #444;
-    color: #f7c08a;
+.dropdown li:hover{
+    color:#d4af37;
+}
 
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+
+
+.dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+.link:hover .dropdown {
+    display:block;
 }
 
 #showcase{
@@ -168,9 +217,6 @@ p{
     overflow: hidden;
 }
 
-/*#home-info .info-content p{
-    padding-bottom: 30px;
-}*/
 
 .box{
     float: left;
@@ -194,9 +240,6 @@ p{
     padding-bottom: 0;
 }
 
-/*.box 1{
-    margin-bottom: 10px;
-}*/
 
 #main-footer{
     text-align: center;
