@@ -9,18 +9,14 @@ html,body{
     line-height: 1.7cm;
    
 }
-body{
-    background-color: linear-gradient(100deg, #fadbd8,#85c1e9);
-    animation: gradient-animation 5s ease infinite;
 
-}
 
 a{
     color: #333;
     text-decoration: none;
 }
 
-hi,h2,h3{
+h1,h2,h3{
     padding-bottom: 20px;
 
 }
