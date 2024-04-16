@@ -7,7 +7,6 @@
     padding: 60px;
     
 }
-
 .room{
     display: flex;
     flex-direction: column;
@@ -17,16 +16,13 @@
     padding: 10px;
     border: none;
     border-radius: 10px;
-    
-    
-    
-}
+    }
+
 .image {
    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
    height: 400px;
    border-radius:5px;
    max-width: 500px;
-    
 }
 
 .img-link:hover{
@@ -140,7 +136,6 @@ background-color:#779ecb; /* Match the header color */
   cursor: pointer;
   font-size: 35px;
   margin-top: 10px;
-  
   font-family: Playfair Display;
 }
 
@@ -148,10 +143,7 @@ button:hover {
     background-color:#5486c0; /* A darker shade for hover effect */
   }
 
-
-
-
-.diff-rooms {
+  .diff-rooms {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
