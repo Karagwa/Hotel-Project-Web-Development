@@ -121,7 +121,6 @@ header{
     background-color: #fff;
     padding: 10px;
     margin: 0;
-    
     box-sizing: border-box;
     border-radius: 5px;
 }
@@ -161,6 +160,7 @@ nav {
     justify-content: space-between;
     background-color: #fff;
     height: 50px;
+    
   }
   
  
