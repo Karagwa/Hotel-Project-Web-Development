@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
 
 :root {
   --primary-color: #2c3855;
@@ -119,7 +119,7 @@ body {
       rgba(44, 56, 85, 0.9),
       rgba(100, 125, 187, 0.1)
     ),
-    url("assets/firstPic.jpg");
+    url("");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -127,16 +127,21 @@ body {
 }
 
 .header__content {
-  max-width: 600px;
-  padding: 5rem 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  color: var(--white);
 }
 
 .header__content h1 {
-  margin-bottom: 1rem;
-  font-size: 3.5rem;
-  line-height: 4rem;
-  font-weight: 600;
-  color: var(--white);
+    font-family: Playfair Display;
+    font-weight: 500;
+    font-size: 7rem; 
+  
 }
 
 .header__content p {
@@ -390,6 +395,9 @@ button a:visited{
 #contacts{
   text-decoration: none;
 }
+
+
+
 
 @media (width < 900px) {
   .popular__grid {
