@@ -133,12 +133,10 @@ body {
     font-family: Playfair Display;
     font-weight: 500;
     font-size: 7rem; 
-  
+    color: var(--text-dark);
 }
 
-.header__content p {
-  color: var(--extra-light);
-}
+
 
 .booking__container {
   position: absolute;
