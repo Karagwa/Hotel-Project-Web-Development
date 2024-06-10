@@ -114,16 +114,8 @@ body {
 .header__image__container {
   position: relative;
   min-height: 500px;
-  background-image: linear-gradient(
-      to right,
-      rgba(128, 159, 232, 0.9),
-      rgba(44, 100, 244, 0.1)
-    ),
-    url("");
   background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: rem;
+  
 }
 
 .header__content {
