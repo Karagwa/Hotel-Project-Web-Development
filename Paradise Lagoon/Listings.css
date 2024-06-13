@@ -118,7 +118,7 @@ h4{
     text-align: center;
 }
 header{
-    background-color: #fff;
+
     padding: 10px;
     margin: 0;
     box-sizing: border-box;
@@ -152,13 +152,13 @@ button:hover {
 }
 
 nav {
-    max-width: var(--max-width);
+    
     margin: auto;
-    padding: 2rem 1rem;
+    padding: 2rem 6rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff;
+    
     height: 50px;
     
   }
@@ -174,7 +174,7 @@ nav {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 75px;
     
   }
 
@@ -182,7 +182,7 @@ nav {
   
   .link a{
     font-weight: 500;
-    color: #333;
+    color: grey;
     transition: 0.3s;
     font-size: 2rem;
     padding-right: 15px;
@@ -190,7 +190,7 @@ nav {
   }
   
 .link a:hover {
-    color:lightblue;
+    color:black;
   }
 
 li{
@@ -204,10 +204,11 @@ li{
     text-align: left;
     padding-left:0px;
     width: 100%;
+    color:grey;
 }
 
 .dropdown li:hover{
-    color: lightblue;
+    color: black;
 }
 
 
